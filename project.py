@@ -26,8 +26,8 @@ def save():
         json.dump(projectJson, fp)
 
 
-if not os.path.exists("project.mcmeta"):
-    with open("project.mcmeta", "w") as fp:
+if not os.path.exists("pack.mcmeta"):
+    with open("pack.mcmeta", "w") as fp:
         json.dump(
             {"pack": {"pack_format": 3, "description": projectJson["name"]}}, fp)
 
@@ -90,6 +90,7 @@ def update():
                         nfp.write(zfp.read())
     projectJson["version"] = version
     save()
+    os.remove("dl.zip")
 
 
 if first:
