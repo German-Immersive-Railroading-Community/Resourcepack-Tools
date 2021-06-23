@@ -29,3 +29,17 @@ You should now be able to start the python file with a double click! If this doe
 ### Note
 
 Please note that all of our code and assets are released under the Apache 2.0 License (See the original mod repository. This is not being updatet!). So make sure you adhere to our license
+
+## Commands
+
+### update
+
+Updates the asset structure and version information according to newer vesions of the mod. You can trigger this anytime and it checks whether there was an update of the mod or not and downloads the new information.
+
+### pack
+
+This packs all your data in one zip file and names it accordingly so you can distribute it. It only packs what is needed for the resource pack to work.
+
+### check, checkall
+
+This checks the texture dependecies and warns you if you have forgotten some dependencies. Additionally it checks your jsons to be not mallformed
