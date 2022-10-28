@@ -1,4 +1,4 @@
-# Resource pack tools for GIRSignals
+# Resource pack tools for OpenSignals
 
 This python file includes a lot of useful tools in order to easily create and distribute resource packs for our signal mod. To be clear you currently can not add your own signals but you can customize the look of your signals.
 
