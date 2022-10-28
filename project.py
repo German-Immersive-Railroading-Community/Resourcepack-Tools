@@ -84,7 +84,7 @@ def pack():
         print("Warning no version provided! Use update to get the data structure from the most recent version!")
     else:
         vers = projectJson["version"]
-    with zipfile.ZipFile(projectJson["name"] + " for GIRSignals " + vers + ".zip", "w") as zf:
+    with zipfile.ZipFile(projectJson["name"] + " for OpenSignals " + vers + ".zip", "w") as zf:
         for root, dirs, files in os.walk("."):
             for file in files:
                 pth = os.path.join(root, file)
@@ -99,7 +99,7 @@ def pack():
 
 def requ(cmd, data=None, mthd=None) -> dict:
     header = {}
-    req = url.Request("https://api.github.com/repos/German-Immersive-Railroading-Community/GIRSignals/" +
+    req = url.Request("https://api.github.com/repos/MrTroble/Open-Signals" +
                       cmd, headers=header, method=mthd, data=data)
     with url.urlopen(req) as rsp:
         return json.load(rsp)
@@ -168,7 +168,7 @@ while True:
     print("""
 ====================================================
 
-            GIR SIGNAL RP PROJECT TOOL
+            OPEN SIGNAL RP PROJECT TOOL
 
 ====================================================
     """)
